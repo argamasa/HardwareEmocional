@@ -1,33 +1,96 @@
-html {
+html { 
+    overflow: auto; 
+    overflow-x: hidden; 
+    overflow-y: auto;
+    /*
     cursor: url("https://downloads.totallyfreecursors.com/cursor_files/heartsarrow.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/heartsarrow.gif"), auto;
+    */
+} 
+  
+body{
+ background-image: url("./Files/home_escritorio_mesa.png"); 
+ background-size: contain;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ width: 100%;
+ display: block;
+ margin: 0 auto;
+ overflow: auto; 
+ overflow-x: hidden; 
+ overflow-y: auto; 
 }
 
-body {
-    background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/10384928/original_a1bc976c377f76468376464d3187c322.png?1611517967?bc=0");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    font-family: 'JetBrains Mono', monospace;
+
+#teclado{
+position: fixed;
+width: 24vw;
+bottom: 2%;
+left: 30%;
+padding: 0;
 }
 
-p {
-    color: white;
-    text-shadow: 2px 2px 4px red;
-    display: inline-block;
-    position: fixed;
-    bottom: 10%;
-    right: 10%;
-    font-size: 4vw;
+#teclado:hover{
+    filter:drop-shadow(0 0 1.5rem #00ff00);
 }
 
-@media screen and (max-width: 600px) {
-    background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/10657679/original_f54cc6d3372ab956af085e5173abfef6.png?1612830775?bc=0");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+#mouse{
+position: fixed;
+width: 5vw;
+bottom: 5%;
+left: 63%;
+padding: 0;
+}
+
+#mouse:hover{
+    filter:drop-shadow(0 0 1.5rem #00ff00);
+}
+
+#monitor{
+position: fixed;
+width: 58vw;
+bottom: 22%;
+left: 24%;
+padding: 0;
+}
+
+#monitor:hover{
+    filter:drop-shadow(0 0 5rem #00ff00);
+}
+
+#laptop{
+position: fixed;
+width: 30vw;
+bottom: 8%;
+left: 2%;
+padding: 0;
+}
+
+#laptop:hover{
+    filter:drop-shadow(0 0 5rem #00ff00);
+}
+
+#discman{
+position: fixed;
+width: 14vw;
+bottom: 13%;
+left: 70%;
+padding: 0;
+}  
+
+#discman:hover{
+    filter:drop-shadow(0 0 1.3rem #00ff00);
+}
+
+#celular{
+position: fixed;
+width: 5vw;
+bottom: 10%;
+left: 86%;
+padding: 0;
+}
+
+#celular:hover{
+    filter:drop-shadow(0 0 0.75rem #00ff00);
 }

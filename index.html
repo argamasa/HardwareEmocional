@@ -1,56 +1,42 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title> hardware emocional </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <meta name="description" content="compañía electrónica para la soledad contemporánea>
-    <meta name="og:title" property="og:title" content="hardwareemocional" />
-    <meta name="og:description" property="og:description" content="💞💻💞" />
-    <meta name="og:image" property="og:image" content="https://s3.amazonaws.com/arena_images-temp/uploads%2Faf920682-f1d2-4b6d-b3d4-5cba50dd2b9c%2Fhardwareemocional.svg" />
+    <meta name="description" content="💞💻💞 compañía electrónica para la soledad contemporánea 💞💻💞"/>
+    <meta name="og:title" property="og:title" content="Hardware Emocional" />
+    <meta name="og:description" property="og:description" content="💞💻💞 compañía electrónica para la soledad contemporánea 💞💻💞" />
+    <meta property="og:image" content="https://s3.amazonaws.com/arena_images-temp/uploads%2Faf920682-f1d2-4b6d-b3d4-5cba50dd2b9c%2Fhardwareemocional.svg" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://s3.amazonaws.com/arena_images-temp/uploads%2Faf920682-f1d2-4b6d-b3d4-5cba50dd2b9c%2Fhardwareemocional.svg">
+    <link rel="shortcut icon" href="./Files/hardwareemocional.svg" />
+    <title> Hardware Emocional </title>
+</head>
 
-
-
+<body>
+    <img id="teclado" src="./Files/home_escritorio_teclado.svg" alt="Info" onclick="myFunction()"> 
     <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Mar 18, 2021 12:00:00").getTime();
+        function myFunction() {
+          var myWindow = window.open("./info.html", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes,top=200, left=500, width=670, height=400");
+          myWindow.blur();
+        }
+        </script>
+        
+    <a href="https://albañil.xyz/" target="_blank">
+        <img id="mouse" src="./Files/home_escritorio_mouse.svg" alt="Ciberalbañil"></a>
 
-        // Update the count down every 1 second
-        var x = setInterval(function() {
+    <a href="https://camaradaelectronico.hardwareemocional.club/" target="_blank">
+        <img id="monitor" src="./Files/home_escritorio_monitor.svg" alt="Compañero Electrónico"></a>
+    <!--
+    <a href="https://cyberganado.hardwareemocional.club/" target="_blank">
+        <img id="laptop" src="./Files/home_escritorio_laptop.svg" alt="Cyber Ganado"></a>
 
-            // Get today's date and time
-            var now = new Date().getTime();
+    <a href="https://poblacionobsoleta.hardwareemocional.club/" target="_blank">
+        <img id="discman" src="./Files/home_escritorio_discman.svg" alt="Población Obsoleta"></a>
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+    <a href="https://mascotavirtual.hardwareemocional.club/" target="_blank">
+        <img id="celular" src="./Files/home_escritorio_telefono.svg" alt="Mascota Virtual"></a>
+    -->
+</body>
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-                minutes + "m " + seconds + "s ";
-
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
-
-    <body>
-        <a href="https://www.nmenos1.xyz/public/residencia/web">
-            <p id="demo"></p>
-        </a>
-    </body>
-
-
-    </html>
+</html>
